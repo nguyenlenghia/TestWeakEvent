@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp2TestEvent", "WpfApp2TestEvent\WpfApp2TestEvent.csproj", "{BD31473C-0372-4796-9354-23AF66382BFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD31473C-0372-4796-9354-23AF66382BFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD31473C-0372-4796-9354-23AF66382BFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD31473C-0372-4796-9354-23AF66382BFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD31473C-0372-4796-9354-23AF66382BFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {528D3807-48CC-48C7-A109-CFCB56A2F010}
+	EndGlobalSection
+EndGlobal
