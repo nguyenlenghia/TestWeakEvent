@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Linq;
@@ -13,5 +12,14 @@ namespace WpfApp2TestEvent
     /// </summary>
     public partial class App : Application
     {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            base.OnStartup(e);
+
+            Task.Run(() =>
+            {
+                DataModel.Instance.Log();
+            });
+        }
     }
 }

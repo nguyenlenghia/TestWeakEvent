@@ -10,21 +10,20 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfApp2TestEvent
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for SecondWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class SecondWindow : Window
     {
-        public MainWindow()
+        public SecondWindow()
         {
             InitializeComponent();
 
-            this.DataContext = new MainWindowViewModel();
+            this.DataContext = new SecondWindowViewModel();
         }
     }
 }
