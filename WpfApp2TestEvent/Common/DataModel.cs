@@ -20,7 +20,9 @@ namespace WpfApp2TestEvent
                 Thread.Sleep(1000);
                 this.Current = DateTime.Now;
 
+                System.Diagnostics.Debug.WriteLine("bgn DataChange?.Invoke");
                 DataChange?.Invoke(this, new EventArgs());
+                System.Diagnostics.Debug.WriteLine("end DataChange?.Invoke");
             }
         }
     }

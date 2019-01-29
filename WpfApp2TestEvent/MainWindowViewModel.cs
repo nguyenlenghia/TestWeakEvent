@@ -49,7 +49,11 @@ namespace WpfApp2TestEvent
 
         public void NotifyChange(object sender, EventArgs args)
         {
+            System.Diagnostics.Debug.WriteLine("bgn MainWindowViewModel.NotifyChange");
+
             TextName = DataModel.Instance.Current?.ToString("u");
+
+            System.Diagnostics.Debug.WriteLine("end MainWindowViewModel.NotifyChange");
         }
     }
 }

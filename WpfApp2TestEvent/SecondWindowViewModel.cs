@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace WpfApp2TestEvent
 {
@@ -26,7 +27,12 @@ namespace WpfApp2TestEvent
 
         public void NotifyChange(object sender, EventArgs args)
         {
+            System.Diagnostics.Debug.WriteLine("bgn SecondWindowViewModel.NotifyChange");
+
+            Thread.Sleep(1000);
             TextName = DataModel.Instance.Current?.ToString("u");
+
+            System.Diagnostics.Debug.WriteLine("end SecondWindowViewModel.NotifyChange");
         }
     }
 }

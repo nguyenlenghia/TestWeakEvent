@@ -1,9 +1,10 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
 namespace WpfApp2TestEvent
 {
-    internal class BaseViewModel : INotifyPropertyChanged
+    internal class BaseViewModel : INotifyPropertyChanged, IDisposable
     {
         #region INotifyPropertyChanged Members
 
@@ -18,5 +19,10 @@ namespace WpfApp2TestEvent
         }
 
         #endregion
+
+        public void Dispose()
+        {
+            
+        }
     }
 }
